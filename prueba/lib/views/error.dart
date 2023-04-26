@@ -1,26 +1,9 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:prueba/views/error.dart';
-import 'package:prueba/views/inicio.dart';
 
-class login_view extends StatefulWidget {
-  @override
-  _login_viewState createState() => _login_viewState();
-}
-
-class _login_viewState extends State<login_view> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(Duration(seconds: 5), () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => inicio()),
-      );
-    });
-  }
+class error extends StatelessWidget {
+  const error({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,9 +28,9 @@ class _login_viewState extends State<login_view> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: const Text(
-              'inserte la tarjeta',
+          const Center(
+            child: Text(
+              'Ocurrio un error!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 40,
@@ -55,9 +38,9 @@ class _login_viewState extends State<login_view> {
               ),
             ),
           ),
-          Center(
-            child: const Text(
-              'por favor',
+          const Center(
+            child: Text(
+              'Por favor vuelva a intentarlo...',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30,
@@ -69,22 +52,11 @@ class _login_viewState extends State<login_view> {
             alignment: Alignment.center,
             margin: const EdgeInsets.only(top: 20),
             child: Image.asset(
-              'assets/images/tarjeta.png',
+              'assets/images/alerta.png',
               width: 250,
               height: 250,
             ),
           ),
-
-          /*ElevatedButton(
-            
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => error()),
-              );
-            },
-            child: Text(''),
-          )*/
         ],
       ),
     );

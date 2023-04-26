@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prueba/views/Login_view.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'ATM',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const Login_view(),
+      home: login_view(),
     );
   }
 }
