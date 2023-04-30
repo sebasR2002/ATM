@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-class saldo extends StatelessWidget {
-  const saldo({super.key});
+class hecho extends StatelessWidget {
+  const hecho({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,10 +30,10 @@ class saldo extends StatelessWidget {
         children: [
           const Center(
             child: Text(
-              'Tu saldo',
+              'Realizado exitosamente',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 80,
+                fontSize: 60,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -42,22 +42,9 @@ class saldo extends StatelessWidget {
             alignment: Alignment.center,
             margin: const EdgeInsets.only(top: 20),
             child: Image.asset(
-              'assets/images/saldo.png',
-              width: 400,
-              height: 250,
-            ),
-          ),
-          Container(
-            alignment: Alignment.bottomLeft,
-            margin: const EdgeInsets.only(top: 100, left: 70),
-            child: Text(
-              'BitCoins en la cuenta: ',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 223, 215, 215)
-              ),
+              'assets/images/chulo.png',
+              width: 200,
+              height: 200,
             ),
           ),
         ],

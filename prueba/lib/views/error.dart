@@ -33,7 +33,7 @@ class error extends StatelessWidget {
               'Ocurrio un error!',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 40,
+                fontSize: 60,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -45,6 +45,7 @@ class error extends StatelessWidget {
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 223, 215, 215)
               ),
             ),
           ),
@@ -53,8 +54,8 @@ class error extends StatelessWidget {
             margin: const EdgeInsets.only(top: 20),
             child: Image.asset(
               'assets/images/alerta.png',
-              width: 250,
-              height: 250,
+              width: 200,
+              height: 200,
             ),
           ),
         ],

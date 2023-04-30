@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:prueba/views/error.dart';
+import 'package:prueba/views/hecho.dart';
 import 'package:prueba/views/inicio.dart';
+import 'package:prueba/views/saldo.dart';
+import 'package:prueba/views/salir.dart';
 
 class login_view extends StatefulWidget {
   @override
@@ -17,7 +20,7 @@ class _login_viewState extends State<login_view> {
     Timer(Duration(seconds: 5), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => inicio()),
+        MaterialPageRoute(builder: (context) => saldo()),
       );
     });
   }
@@ -47,20 +50,10 @@ class _login_viewState extends State<login_view> {
         children: [
           Center(
             child: const Text(
-              'inserte la tarjeta',
+              'Inserte su tarjeta',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-          Center(
-            child: const Text(
-              'por favor',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 30,
+                fontSize: 60,
                 fontWeight: FontWeight.bold,
               ),
             ),
