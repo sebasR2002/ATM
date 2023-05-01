@@ -20,7 +20,7 @@ class _login_viewState extends State<login_view> {
     Timer(Duration(seconds: 5), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => saldo()),
+        MaterialPageRoute(builder: (context) => inicio()),
       );
     });
   }
