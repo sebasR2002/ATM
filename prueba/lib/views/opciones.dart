@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:prueba/views/depositar.dart';
 import 'package:prueba/views/historial_t.dart';
 import 'package:prueba/views/p_factura.dart';
+import 'package:prueba/views/prueba_tf.dart';
 import 'package:prueba/views/retirar.dart';
 import 'package:prueba/views/saldo.dart';
 import 'package:prueba/views/salir.dart';
@@ -39,7 +40,7 @@ class opciones extends StatelessWidget {
             'Opciones',
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 60,
+              fontSize: 80,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -48,6 +49,7 @@ class opciones extends StatelessWidget {
               Expanded(
                 child: Column(
                   children: [
+                    SizedBox(height: 100),
                     Row(
                       children: [
                         ElevatedButton(
@@ -59,8 +61,8 @@ class opciones extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color.fromARGB(255, 161, 151, 151)),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(''),
                         ),
@@ -86,8 +88,8 @@ class opciones extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color.fromARGB(255, 161, 151, 151)),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(''),
                         ),
@@ -113,8 +115,8 @@ class opciones extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color.fromARGB(255, 161, 151, 151)),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(''),
                         ),
@@ -140,8 +142,8 @@ class opciones extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color.fromARGB(255, 161, 151, 151)),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(''),
                         ),
@@ -161,6 +163,7 @@ class opciones extends StatelessWidget {
               Expanded(
                 child: Column(
                   children: [
+                    SizedBox(height: 150),
                     Row(
                       children: [
                         const Expanded(
@@ -185,8 +188,8 @@ class opciones extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color.fromARGB(255, 161, 151, 151)),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(''),
                         ),
@@ -216,8 +219,8 @@ class opciones extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color.fromARGB(255, 161, 151, 151)),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(''),
                         ),
@@ -247,8 +250,8 @@ class opciones extends StatelessWidget {
                             );
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Color.fromARGB(255, 161, 151, 151)),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
                           ),
                           child: const Text(''),
                         ),

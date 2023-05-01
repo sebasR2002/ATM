@@ -10,7 +10,7 @@ class depositar extends StatefulWidget {
 }
 
 class _DepositarState extends State<depositar> {
-  String _inputText = '';
+  TextEditingController _textEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,28 @@ class _DepositarState extends State<depositar> {
             children: [
               Expanded(
                 child: Row(
-                  children: [],
+                  children: [
+                    Container(
+                      width: 50,
+                      height: 50,
+                      color: Colors.white,
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      width: 400,
+                      child: Expanded(
+                        child: TextField(
+                          controller: _textEditingController,
+                          decoration: InputDecoration(
+                            filled: true,
+                            fillColor: Colors.grey,
+                            hintText: 'Ingresa la cantidad de dinero',
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Expanded(
@@ -74,16 +95,18 @@ class _DepositarState extends State<depositar> {
                             margin: const EdgeInsets.only(top: 20),
                             child: Image.asset(
                               'assets/images/depositar.png',
-                              width: 250,
-                              height: 250,
+                              width: 300,
+                              height: 300,
                             ),
                           ),
                           Column(
                             children: [
+                              SizedBox(height: 300),
                               Row(
                                 children: [
+                                  SizedBox(width: 100),
                                   Text(
-                                    '          Listo',
+                                    '        Listo',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: 30,
@@ -102,8 +125,7 @@ class _DepositarState extends State<depositar> {
                                     style: ButtonStyle(
                                       backgroundColor:
                                           MaterialStateProperty.all<Color>(
-                                              Color.fromARGB(
-                                                  255, 161, 151, 151)),
+                                              Colors.white),
                                     ),
                                     child: const Text(''),
                                   ),
@@ -112,8 +134,9 @@ class _DepositarState extends State<depositar> {
                               Text('\n'),
                               Row(
                                 children: [
+                                  SizedBox(width: 100),
                                   Text(
-                                    '          Salir',
+                                    '        Salir',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontSize: 30,
@@ -132,8 +155,7 @@ class _DepositarState extends State<depositar> {
                                     style: ButtonStyle(
                                       backgroundColor:
                                           MaterialStateProperty.all<Color>(
-                                              Color.fromARGB(
-                                                  255, 161, 151, 151)),
+                                              Colors.white),
                                     ),
                                     child: const Text(''),
                                   ),
