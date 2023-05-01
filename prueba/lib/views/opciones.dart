@@ -47,7 +47,6 @@ class opciones extends StatelessWidget {
             children: [
               Expanded(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Row(
                       children: [
@@ -75,6 +74,7 @@ class opciones extends StatelessWidget {
                         ),
                       ],
                     ),
+                    Text('\n'),
                     Row(
                       children: [
                         ElevatedButton(
@@ -101,6 +101,7 @@ class opciones extends StatelessWidget {
                         ),
                       ],
                     ),
+                    Text('\n'),
                     Row(
                       children: [
                         ElevatedButton(
@@ -127,6 +128,7 @@ class opciones extends StatelessWidget {
                         ),
                       ],
                     ),
+                    Text('\n'),
                     Row(
                       children: [
                         ElevatedButton(
@@ -158,10 +160,22 @@ class opciones extends StatelessWidget {
               ),
               Expanded(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Row(
                       children: [
+                        const Expanded(
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Text(
+                              'Ver historial de transacciones',
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(
@@ -176,18 +190,24 @@ class opciones extends StatelessWidget {
                           ),
                           child: const Text(''),
                         ),
-                        const Text(
-                          'Ver historial de transacciones',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
                       ],
                     ),
+                    Text('\n'),
                     Row(
                       children: [
+                        const Expanded(
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Text(
+                              'Ver saldo',
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(
@@ -201,18 +221,24 @@ class opciones extends StatelessWidget {
                           ),
                           child: const Text(''),
                         ),
-                        const Text(
-                          'Ver saldo',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
                       ],
                     ),
+                    Text('\n'),
                     Row(
                       children: [
+                        const Expanded(
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Text(
+                              'Salir',
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(
@@ -225,14 +251,6 @@ class opciones extends StatelessWidget {
                                 Color.fromARGB(255, 161, 151, 151)),
                           ),
                           child: const Text(''),
-                        ),
-                        const Text(
-                          'Salir',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
                         ),
                       ],
                     ),
