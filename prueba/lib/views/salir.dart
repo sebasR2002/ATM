@@ -1,10 +1,26 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:prueba/views/Login_view.dart';
 
-class salir extends StatelessWidget {
-  const salir({super.key});
+class salir extends StatefulWidget {
+    @override
+  salirState createState() => salirState();
+}
 
+class salirState extends State<salir> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 10), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => login_view()),
+      );
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

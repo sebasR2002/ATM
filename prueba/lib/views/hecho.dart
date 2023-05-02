@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'dart:async';
 
-class hecho extends StatelessWidget {
-  const hecho({super.key});
+import 'package:prueba/views/salir.dart';
 
+class hecho extends StatefulWidget {
+    @override
+  hechoState createState() => hechoState();
+}
+class hechoState extends State<hecho> {
   @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 5), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => salir()),
+      );
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

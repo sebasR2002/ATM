@@ -5,8 +5,11 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:prueba/views/error.dart';
 import 'package:prueba/views/hecho.dart';
 import 'package:prueba/views/inicio.dart';
+import 'package:prueba/views/p_factura.dart';
+import 'package:prueba/views/retirar.dart';
 import 'package:prueba/views/saldo.dart';
 import 'package:prueba/views/salir.dart';
+import 'package:prueba/views/historial_t.dart';
 
 class login_view extends StatefulWidget {
   @override

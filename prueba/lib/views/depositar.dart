@@ -47,7 +47,7 @@ class _DepositarState extends State<depositar> {
           ),
           const Center(
             child: Text(
-              'Por favor ingrese la cantidad de dinero a depositar y presione listo',
+              'Por favor ingrese la cantidad de Bitcoins a depositar y presione listo',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30,
@@ -75,7 +75,7 @@ class _DepositarState extends State<depositar> {
                           decoration: InputDecoration(
                             filled: true,
                             fillColor: Colors.grey,
-                            hintText: 'Ingresa la cantidad de dinero',
+                            hintText: 'Ingresa la cantidad de Bitcoins',
                             border: OutlineInputBorder(),
                           ),
                         ),

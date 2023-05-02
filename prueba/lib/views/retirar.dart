@@ -58,7 +58,7 @@ class _RetirarState extends State<retirar> {
                 ),
                 const Center(
                   child: Text(
-                    'Por favor ingrese su cantidad de dinero\n a retirar \n y presione listo',
+                    'Por favor ingrese su cantidad \n de Bitcoins a retirar \n y presione listo',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 28,
@@ -96,7 +96,7 @@ class _RetirarState extends State<retirar> {
                           decoration: InputDecoration(
                             filled: true,
                             fillColor: Colors.grey,
-                            hintText: 'Ingresa la cantidad de dinero',
+                            hintText: 'Ingresa la cantidad de Bitcoins',
                             border: OutlineInputBorder(),
                           ),
                         ),

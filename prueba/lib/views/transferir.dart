@@ -11,6 +11,9 @@ class transferir extends StatefulWidget {
 
 class _TransferirState extends State<transferir> {
   TextEditingController _textEditingController = TextEditingController();
+  TextEditingController _textEditingController2 = TextEditingController();
+  TextEditingController _textEditingController3 = TextEditingController();
+  TextEditingController _textEditingController4 = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -119,7 +122,7 @@ class _TransferirState extends State<transferir> {
                         width: 400,
                         child: Expanded(
                           child: TextField(
-                            controller: _textEditingController,
+                            controller: _textEditingController2,
                             decoration: InputDecoration(
                               filled: true,
                               fillColor: Colors.grey,
@@ -144,7 +147,7 @@ class _TransferirState extends State<transferir> {
                         width: 400,
                         child: Expanded(
                           child: TextField(
-                            controller: _textEditingController,
+                            controller: _textEditingController3,
                             decoration: InputDecoration(
                               filled: true,
                               fillColor: Colors.grey,
@@ -169,7 +172,7 @@ class _TransferirState extends State<transferir> {
                         width: 400,
                         child: Expanded(
                           child: TextField(
-                            controller: _textEditingController,
+                            controller: _textEditingController4,
                             decoration: InputDecoration(
                               filled: true,
                               fillColor: Colors.grey,
